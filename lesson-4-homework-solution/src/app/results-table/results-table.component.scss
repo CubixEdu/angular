@@ -1,0 +1,28 @@
+table {
+    width: 100%;
+    color: #424242;
+}
+
+th {
+    text-transform: uppercase;
+    background-color: white;
+    color: lightgray;
+    text-align: left;
+    padding: 8px;
+}
+
+tr {
+    background-color: #f5f5f5;
+}
+
+tr.odd {
+    background-color: #e0e0e0;
+}
+
+tr.selected {
+    font-weight: bold;
+}
+
+td {
+    padding: 8px;
+}

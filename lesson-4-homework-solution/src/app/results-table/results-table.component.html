@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <th>Futam</th>
+        <th>Dátum</th>
+        <th>Gyöztes</th>
+        <th>Csapat</th>
+        <th>Körök száma</th>
+    </tr>
+    <tr *ngFor="let result of results; let i = index" 
+    [ngClass]="{'selected': i === selectedRow, 'odd': i % 2 !== 0}"
+    (click)="selectRow(i)">
+        <td>{{result.grandPrix}}</td>
+        <td>{{result.date | date:'shortDate'}}</td>
+        <td>{{result.winner}}</td>
+        <td>{{result.team | uppercase}}</td>
+        <td>{{result.laps}}</td>
+    </tr>
+</table>

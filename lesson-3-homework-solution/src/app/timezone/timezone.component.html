@@ -1,0 +1,8 @@
+<div class="wrapper" [ngClass]="{'current' : isCurrent}">
+    <input type="text" name="" id="" [(ngModel)]="tzName">
+    <p>{{time | date:'shortTime'}}</p>
+    <div>
+        <button (click)="updateTime()">Frissítés</button>
+        <button (click)="timezoneSelectorClick()" [disabled]="isCurrent">Jelenleginek jelöl</button>
+    </div>
+</div>

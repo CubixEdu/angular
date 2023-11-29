@@ -1,0 +1,28 @@
+<h1>{{title}}</h1>
+
+<img [src]="logoSrc" height="300">
+
+<div>
+    <label>Hány számlálót szeretnél?</label><br>
+    <!-- <input type="number" [value]="counterCount" (change)="counterCountChanged($event)"> -->
+    <input type="number" [(ngModel)]="counterCount" (ngModelChange)="counterCountChanged()">
+    {{counterCount}}
+</div>
+
+<app-counter 
+    *ngFor="let counter of counters"
+    [aim]="aim" 
+    [counter]="counter" 
+    (countChange)="countChanged($event)"/>
+
+<!-- <app-counter 
+    *ngIf="!isComplete" 
+    [aim]="aim" 
+    [counter]="counter" 
+    (countChange)="countChanged($event)"/>
+    
+<app-counter [aim]="3" [counter]="{name: 'Fűnyírás', id: 3}"/> -->
+<br>
+
+<p>{{log}}</p>
+<button>Change detection vizsgálat</button>

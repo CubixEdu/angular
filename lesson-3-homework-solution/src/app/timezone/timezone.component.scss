@@ -1,0 +1,10 @@
+.wrapper {
+    border: 1px solid darkgray;
+    padding: 8px;
+    margin: 8px 0;
+    width: fit-content;
+
+    &.current {
+        background-color: lightblue;
+    }
+}

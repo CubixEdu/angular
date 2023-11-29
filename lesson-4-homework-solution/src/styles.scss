@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    border-color: transparent;
+    margin: 0 4px;
+
+    &:disabled {
+        background-color: darkgray;
+    }
+}

@@ -1,0 +1,9 @@
+<h2>Timezones</h2>
+
+<app-timezone [timezone]="'Europe/Budapest'" 
+  [isCurrent]="selectedTimezone === 'Europe/Budapest'"
+  (changeTimezone)="handleTimezoneChange($event)"/>
+
+<app-timezone [timezone]="'America/New_York'" 
+  [isCurrent]="selectedTimezone === 'America/New_York'"
+  (changeTimezone)="handleTimezoneChange($event)"/>

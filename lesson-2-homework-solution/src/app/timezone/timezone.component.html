@@ -1,0 +1,8 @@
+<p>{{timezone}}</p>
+<p>{{time}}</p>
+<div>
+    <button (click)="updateTime()">Frissítés</button>
+    <button 
+    (click)="timezoneSelectorClick()" 
+    [disabled]="isCurrent">Jelenleginek jelöl</button>
+</div>

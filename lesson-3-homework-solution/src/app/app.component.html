@@ -1,0 +1,10 @@
+<h2>Timezones</h2>
+
+<ng-container *ngFor="let zone of displayedTimezones">
+  <app-timezone [timezone]="zone" 
+  [isCurrent]="selectedTimezone === zone"
+  (changeTimezone)="handleTimezoneChange($event)"></app-timezone>
+</ng-container>
+
+<br>
+<button *ngIf="displayedTimezones.length <= 5" (click)="addNewTimezone()" class="secondary">Új hozzáadása</button>

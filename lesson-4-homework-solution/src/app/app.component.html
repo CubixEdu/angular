@@ -1,0 +1,10 @@
+<div class="header">
+    <img src="../assets/f1-logo.jpeg" alt="" width="200px">
+    <h1>Eredmények</h1>
+</div>
+
+<app-results-table [results]="results" [(selectedRow)]="selectedRow"></app-results-table>
+
+<app-podium *ngIf="selectedRow !== undefined" 
+    [podium]="results[selectedRow].podium" 
+    (hide)="selectedRow = undefined"></app-podium>
