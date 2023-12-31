@@ -1,0 +1,3 @@
+<div *ngFor="let covidRecord of covidData" [covidRecord]="covidRecord" [iWantTheTruth]="iWantTheTruth" >
+  {{covidRecord.date | date:'YYYY-MM-dd'}} - {{covidRecord | covid:iWantTheTruth}}
+</div>

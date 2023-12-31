@@ -1,0 +1,5 @@
+<div>
+  <!-- <p>{{text | myUppercase}}</p> -->
+
+  <p *ngFor="let fruit of fruits" [appFruit]="fruit">{{fruit | displayFruit:hatedFruits.includes(fruit.name) | myUppercase}}</p>
+</div>
