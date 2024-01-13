@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+$btn-height: 28px;
+
+.basic-button {
+    height: $btn-height;
+    min-width: $btn-height * 3;
+    border: none;
+    border-radius: 4px;
+}
+
+.primary-button {
+    @extend .basic-button;
+
+    background-color: #0367A6;
+    color: white;
+
+    &:hover {
+        background-color: #6CCED9;
+        color: black;
+        cursor: pointer;
+    }
+}
