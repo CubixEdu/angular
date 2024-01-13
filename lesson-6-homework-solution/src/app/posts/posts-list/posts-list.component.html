@@ -1,0 +1,5 @@
+<div class="list" *ngFor="let post of posts()">
+    <p [routerLink]="[post.id]">{{post.title}}</p>
+    <button (click)="deletePost(post.id)">Delete</button>
+</div>
+  
