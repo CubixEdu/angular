@@ -1,0 +1,10 @@
+<div class="new-task">
+    <div class="new-task-form">
+      <input type="text" [(ngModel)]="name" placeholder="Név">
+      <input type="text" [(ngModel)]="description" placeholder="Leírás">
+    </div>
+    <div class="buttons">
+      <button (click)="addTask()">Létrehozás</button>
+      <button (click)="cancel()">Vissza</button>
+    </div>
+  </div>

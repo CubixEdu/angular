@@ -1,0 +1,20 @@
+.new-task {
+    padding: 24px;
+  }
+  
+  .new-task-form {
+    display: flex;
+    flex-direction: column;
+  
+    input {
+      margin-bottom: 12px;
+    }
+  }
+  
+  .buttons {
+    display: flex;
+  
+    button {
+      margin-right: 8px;
+    }
+  }

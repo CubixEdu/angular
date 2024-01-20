@@ -1,0 +1,8 @@
+<div class="task" *ngIf="task">
+  <div>
+    <p>{{task | task}}</p>
+  </div>
+  <div *ngIf="!task.isDone">
+    <button (click)="markAsDone()">Kész</button>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div>
+    <div class="menu">
+      <button [routerLink]="['./new']">Új feladat</button>
+      <button (click)="logout()">Kijelentkezés</button>
+    </div>
+  
+    <div class="task-list">
+      <h2>Feladatok</h2>
+      <app-task *ngFor="let task of todoTasks()" [task]="task"></app-task>
+    </div>
+  
+    <div class="task-list">
+      <h2>Kész feladatok</h2>
+      <app-task *ngFor="let task of doneTasks()" [task]="task"></app-task>
+    </div>
+  </div>
