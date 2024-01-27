@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Bejelentkezés</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+        <div class="login-form">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input type="text" matInput required [(ngModel)]="email">
+            </mat-form-field>
+    
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput required [(ngModel)]="password">
+            </mat-form-field>
+        </div>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="login()">Bejelentkezés</button>
+    </mat-card-actions>
+</mat-card>

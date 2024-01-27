@@ -1,0 +1,11 @@
+<mat-toolbar>
+    <div>
+        <span>Ötletdoboz</span>
+    </div>
+
+    <div>
+        @if (authService.isLoggedIn) {
+            <button mat-icon-button (click)="logout()"><mat-icon>logout</mat-icon></button>
+        }
+    </div>
+</mat-toolbar>
