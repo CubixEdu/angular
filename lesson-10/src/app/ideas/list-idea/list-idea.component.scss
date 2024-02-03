@@ -1,0 +1,12 @@
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 32px 0;
+
+    .idea {
+        width: 80%;
+    }
+}

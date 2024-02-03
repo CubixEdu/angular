@@ -1,0 +1,33 @@
+<div class="container">
+    <h1>Ötlet felvétele</h1>
+
+    <form [formGroup]="newIdea" (ngSubmit)="save()">
+        <mat-form-field appearance="outline">
+            <mat-label>Név</mat-label>
+            <input matInput formControlName="name">
+
+            @if (newIdea.controls.name.errors?.['required']) {
+                <mat-error>A név magadása kötelező</mat-error>
+            }
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Leírás</mat-label>
+            <input matInput formControlName="description">
+
+            @if (newIdea.controls.description.errors?.['required']) {
+                <mat-error>A leírás magadása kötelező</mat-error>
+            }
+        </mat-form-field>
+
+        <button type="submit" mat-raised-button color="primary"
+            [disabled]="newIdea.invalid || isLoading()">
+            @if (isLoading()) {
+                <mat-spinner color="primary" [diameter]="20"/>
+            } @else {
+                Mentés
+            }
+        </button>
+        <button type="button" style="margin-left: 8px;" mat-button [routerLink]="['/ideas']">Vissza</button>
+    </form>
+</div>
